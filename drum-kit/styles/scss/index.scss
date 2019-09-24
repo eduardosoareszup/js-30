@@ -1,0 +1,52 @@
+@import 'general/reset.scss';
+
+$primary-color: black;
+$secondary-color: tomato;
+$main-key-color: white;
+
+$default-spacing: 10px;
+$key-opacity: 0.6;
+
+body {
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.drum-kit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.keys {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: rgba($primary-color, $key-opacity);
+  border: 3px solid $primary-color;
+  border-radius: 4px;
+  padding: $default-spacing;
+  margin-left: $default-spacing;
+  margin-right: $default-spacing;
+
+  .main-key {
+    font-size: 2rem;
+    color: $main-key-color;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+  }
+
+  .help-key {
+    width: 100%;
+    text-align: center;
+    color: $secondary-color;
+    text-transform: uppercase;
+    margin-top: $default-spacing/2;
+    font-weight: bold;
+  }
+}
