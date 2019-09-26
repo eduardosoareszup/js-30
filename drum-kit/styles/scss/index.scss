@@ -1,14 +1,16 @@
 @import 'general/reset.scss';
 
 $primary-color: black;
-$secondary-color: tomato;
-$main-key-color: white;
+$secondary-color: #1565c0;
+$main-key-color: $secondary-color;
+
+$background-keys: white;
 
 $default-spacing: 10px;
 $key-opacity: 0.6;
 
 body {
-  background-image: url('../images/background.jpg');
+  background: $secondary-color;
   background-size: cover;
   min-width: 100vw;
   min-height: 100vh;
@@ -26,8 +28,8 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background: rgba($primary-color, $key-opacity);
-  border: 3px solid $primary-color;
+  background: $background-keys;
+  border: 3px solid darken($background-keys, 5%);
   border-radius: 4px;
   padding: $default-spacing;
   margin-left: $default-spacing;
