@@ -11,7 +11,7 @@
 
 <body>
   <div class="drum-kit">
-    <div class="keys">
+    <div data-key="65" class="keys" onclick="clickKey('a')">
       <div class="main-key">
         A
       </div>
@@ -19,7 +19,7 @@
         Clap
       </div>
     </div>
-    <div class="keys">
+    <div data-key="83" class="keys" onclick="clickKey('s')">
       <div class="main-key">
         S
       </div>
@@ -27,7 +27,7 @@
         Hihat
       </div>
     </div>
-    <div class="keys">
+    <div data-key="68" class="keys" onclick="clickKey('d')">
       <div class="main-key">
         D
       </div>
@@ -35,7 +35,7 @@
         kick
       </div>
     </div>
-    <div class="keys">
+    <div data-key="70" class="keys" onclick="clickKey('f')">
       <div class="main-key">
         F
       </div>
@@ -43,7 +43,7 @@
         openhat
       </div>
     </div>
-    <div class="keys">
+    <div data-key="71" class="keys" onclick="clickKey('g')">
       <div class="main-key">
         G
       </div>
@@ -51,7 +51,7 @@
         boom
       </div>
     </div>
-    <div class="keys">
+    <div data-key="72" class="keys" onclick="clickKey('h')">
       <div class="main-key">
         H
       </div>
@@ -59,31 +59,41 @@
         ride
       </div>
     </div>
-    <div class="keys">
+    <div data-key="74" class="keys" onclick="clickKey('j')">
       <div class="main-key">
-        I
+        J
       </div>
       <div class="help-key">
         snare
       </div>
     </div>
-    <div class="keys">
+    <div data-key="75" class="keys" onclick="clickKey('k')">
       <div class="main-key">
-        J
+        K
       </div>
       <div class="help-key">
         tom
       </div>
     </div>
-    <div class="keys">
+    <div data-key="76" class="keys" onclick="clickKey('l')">
       <div class="main-key">
-        K
+        L
       </div>
       <div class="help-key">
         tink
       </div>
     </div>
   </div>
-</body>
 
+  <audio data-key="65" src="sounds/clap.wav"></audio>
+  <audio data-key="83" src="sounds/hihat.wav"></audio>
+  <audio data-key="68" src="sounds/kick.wav"></audio>
+  <audio data-key="70" src="sounds/openhat.wav"></audio>
+  <audio data-key="71" src="sounds/boom.wav"></audio>
+  <audio data-key="72" src="sounds/ride.wav"></audio>
+  <audio data-key="74" src="sounds/snare.wav"></audio>
+  <audio data-key="75" src="sounds/tom.wav"></audio>
+  <audio data-key="76" src="sounds/tink.wav"></audio>
+  <script src="scripts/index.js"></script>
+</body>
 </html>

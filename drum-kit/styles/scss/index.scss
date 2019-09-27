@@ -34,6 +34,7 @@ body {
   padding: $default-spacing;
   margin-left: $default-spacing;
   margin-right: $default-spacing;
+  cursor: pointer;
 
   .main-key {
     font-size: 2rem;
@@ -50,5 +51,10 @@ body {
     text-transform: uppercase;
     margin-top: $default-spacing/2;
     font-weight: bold;
+  }
+
+  &:hover {
+    background: #cecece;
+    border: 3px solid #aaa;
   }
 }
